@@ -1,0 +1,141 @@
+% \iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+%\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{NCERT 12.10 5Q}
+\author{EE23BTECH11013 - Avyaaz$^{*}$% <-this % stops a space
+}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\large\textbf{\textsl{Question:}}
+In Young’s double-slit experiment using monochromatic light of wavelength $\lambda$, the intensity of light at a point on the screen where path difference is $\lambda$, is $K$ units. What is the intensity of light at a
+point where path difference is $\lambda$/3?\\
+\large\textbf{\textsl{Solution:}}\\
+Given,\\
+\hspace*{1cm}Path difference = $\lambda$
+
+
+Let $I_1$ and $I_2$ be the intensity of two coherent waves. The resultant intensity is given by:
+
+$I_{\text{net}} = I_1 + I_2 + 2\sqrt{I_1I_2}\cos{\phi}$
+
+Here, $\phi$ is the phase difference between two light waves.
+
+Intensities are equal for monochromatic light waves.
+
+\hspace{1cm}$I_1 = I_2$
+
+$\therefore$ $I_{\text{net}} = I_1 + I_1 + 2\sqrt{I_1I_1}\cos{\phi}$
+
+\vspace{0.2cm}
+
+       \hspace{0.2cm}      $I_{\text{net}} = 2I_1 + 2I_1\cos{\phi}$
+
+$\because I_{\text{net}} = K$
+
+
+          K = $ 2I_1 + 2I_1\cos{\phi}$
+ 
+We know that, 
+
+      Phase difference =$\dfrac{2\pi}{\lambda}$ x Path difference
+
+      \vspace{0.2cm}
+
+$\because$ path difference = $\lambda$
+
+\vspace{0.2cm}
+
+\hspace{1cm}$\phi = \dfrac{2\pi}{\lambda}$  x  $\lambda$
+
+\vspace{0.2cm}
+
+Phase difference = $\phi = 2\pi$
+
+$\therefore K = 2I_1 +2I_1\cos{2\pi}$
+
+\vspace{0.2cm}
+
+        \hspace{0.2cm}    K = 4$I_1$
+
+\vspace{0.2cm}
+
+      \hspace{1cm}  $\therefore    I_1=\dfrac{K}{4}$
+
+\vspace{1cm}
+
+When path difference = $\dfrac{\lambda}{3}$
+
+\vspace{0.3cm}
+
+Phase difference = $ \phi = \dfrac{2\pi}{3} $
+
+Hence,
+
+\hspace*{0.5cm}Resultant intensity,
+\[I_{\text{R}} = 2I_1 + 2\sqrt{I_1I_1}\cos{\dfrac{2\pi}{3}}\]
+
+\[I_{\text{R}}= 2I_1 + 2I_1\left(\dfrac{-1}{2}\right)\]
+
+\[I_{\text{R}} = I_1\]
+
+From the above result,
+\hspace*{0.5cm}
+\begin{align*}
+I_1 = \dfrac{K}{4}\\
+\therefore I_{\text{R}} = \dfrac{K}{4}
+\end{align*}
+
+Hence, the Intensity of light at a point where path difference is $\dfrac{\lambda}{3}$ is $\dfrac{K}{4}$ units.
+
+\bibliographystyle{IEEEtran}
+\end{document}
