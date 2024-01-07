@@ -63,31 +63,8 @@ point where path difference is $\lambda$/3?\\
 Given,\\
 \begin{table}[htbp]
 \centering
-\begin{tabular}{c|c}
-\hline 
-   \textbf{Parameter}  &\textbf{Description} \\
-\hline
-     $\lambda$ & Wavelength of monochromatic light\\
-\hline
-$K$ & Intensity of light at path difference $\lambda$ \\
-\hline
-$\Delta x$ & Path difference \\
-\hline
-$A,A_1,A_2$ & Amplitudes of light waves \\
-\hline
-$\omega$ & Angular frequency \\
-\hline
-$k$ & Wave number \\ 
-\hline
-$\phi, \phi_1,\phi_2$ & Phase differences \\
-\hline
-$\Delta \phi $ & Phase differences between two waves \\
-\hline
-$I_1,I_2,I_{\text{net}},I_{\text{R}}$ & Intensities of coherent waves \\
-\hline
-\end{tabular}
+\input{tables/table}
 \vspace{0.2cm}
-
 \caption{$Parameters$}
 \label{tab:parameters}
 \end{table}
@@ -95,48 +72,42 @@ $I_1,I_2,I_{\text{net}},I_{\text{R}}$ & Intensities of coherent waves \\
 \hspace*{1cm}Path difference = $\lambda$
 
 The general equation of light wave is:
+\begin{align}
+       y\brak{t} &= A\sin{(\omega t - kx)} \label{eq:lightwave}
+\end{align}
 
-\vspace{0.2cm}
+ where,
+ \begin{align}
+ \text{phase} = \phi &= \omega t - kx \nonumber \\
+ \text{wave number} &= k = \dfrac{2\pi}{\lambda} \nonumber 
+ \end{align}
 
-  \hspace*{1.3cm}  $y = A\sin{(\omega t - kx)}$
-
-\vspace{0.3cm}
-
- where,\\
- \hspace*{1.5cm} phase = $\phi = \omega t - kx$ \\
- \hspace*{1.5cm} $k$ = wave number = $\dfrac{2\pi}{\lambda}$ \\
 In, Young's double-slit experiment the light waves coming out from the source $S$ fall on both $S_1$ and $S_2$ slits which behave like coherent sources since the light waves coming from both slits are from the same original source. Hence, the light waves coming out from the slits are coherent.
 
 \vspace{0.3cm}
 
 The equation of light wave coming out from the slit $S_1$ is:
-
-\vspace{0.2cm}
-
- \hspace*{1.3cm}  $y_1 = A_1\sin{(\omega t - kx_1)}$
-
- \vspace{0.3cm}
-
+\begin{align}
+    y_1\brak{t} = A_1\sin{(\omega t - kx_1)} 
+\end{align}
 The equation of light wave coming out from the slit $S_2$ is:
+\begin{align}
+     y_2\brak{t} = A_2\sin{(\omega t - kx_2)}
+\end{align}
 
-\vspace{0.2cm}
+where,
+\begin{align}
+ \therefore \phi_1 &= \omega t - kx_1 \\
+\hspace*{0.4cm} \phi_2 &= \omega t - kx_2 
+\end{align}
 
- \hspace*{1.3cm}  $y_2 = A_2\sin{(\omega t - kx_2)}$
-\hspace{0.3cm}
-\begin{equation}
- \therefore \phi_1 = \omega t - kx_1 
-\end{equation}
-\begin{equation}
-\hspace*{0.4cm} \phi_2 = \omega t - kx_2 
-\end{equation}
+$ \text{Subtracting equations}\brak{4} and \brak{5}  \Rightarrow{}$
+\begin{align}
+   \phi_1 - \phi_2 &= \omega t - kx_1 -( \omega t - kx_2 ) \nonumber \\ 
+   \Delta \phi &= k(x_2 - x_1) \nonumber \\ 
+    \Delta \phi &= \dfrac{2\pi}{\lambda}\Delta x 
+\end{align}
 
-$ (1) - (2)  \Rightarrow{}$
-
-\hspace*{0.3cm}$\phi_1 - \phi_2 = \omega t - kx_1 -( \omega t - kx_2 )$ \\ 
-
-\hspace{0.3cm}$ \Delta \phi = k(x_2 - x_1) $ \\
-
-\hspace{0.3cm}$ \Delta \phi = \dfrac{2\pi}{\lambda}\Delta x$ \\ 
 \hspace{0.3cm} Phase difference =$\dfrac{2\pi}{\lambda}$ x Path difference
 
 \vspace{0.2cm}
@@ -146,93 +117,65 @@ The variation of distance covered by two waves from their sources to the point w
 The disparity in phases of two particles at any two moments where their position and motion are the same is known as Phase difference.
 
 $\because$ path difference = $\lambda$
-
-\vspace{0.2cm}
-
-\hspace{1cm}$\Delta \phi = \dfrac{2\pi}{\lambda}$  x  $\lambda$
-
-\vspace{0.2cm}
-
-Phase difference = $\Delta \phi = 2\pi$
-
-
-      \vspace{0.2cm}
+\begin{align}
+\Delta \phi &= \dfrac{2\pi}{\lambda}  x  \lambda \nonumber \\
+\text{Phase difference} &= \Delta \phi = 2\pi
+\end{align}
 
 The intensity of light is defined as the energy transmitted per unit area in one unit of time. The square of the amplitude of the wave is generally determined as the intensity of the light. 
 Let at an arbitrary point the phase difference between the two displacements produced by the waves be $y_1$ and $y_2$ be $\phi$.\\
-Thus, the displacement produced by $y_1$ is given by:
-\hspace*{1cm} $y_1 = A_1cos(\omega t )$ \\
+Thus, the displacement produced by $y_1$ is given by:\
+\begin{align}
+    y_1\brak{t} &= A_1cos(\omega t )
+\end{align}
 The displacement produced by $y_2$ is given by:
-\hspace*{1cm} $y_2 = A_2cos(\omega t + \phi)$ \\
-
-\hspace*{1.8cm}$ \overrightarrow{A}$ = $\overrightarrow{A_1} + \overrightarrow{A_2}$ 
-
-\vspace{0.2cm}
-
-\hspace*{0.9cm}$\lvert \overrightarrow{A} \rvert^2$ = $\lvert\overrightarrow{A_1}\rvert^2 +\lvert \overrightarrow{A_2}\rvert^2 + 2\lvert\overrightarrow{A_1}\rvert\lvert\overrightarrow{A_2}\rvert \cos \phi$
-
-\vspace{0.2cm}
-
-\hspace*{1cm}$\because I \propto \lvert\overrightarrow{A}\rvert^2$
-
-\vspace{0.2cm}
+\begin{align}
+    y_2\brak{t} &= A_2cos(\omega t + \phi)
+\end{align}
+\begin{align}
+ \because \overrightarrow{A} &= \overrightarrow{A_1} + \overrightarrow{A_2} \nonumber \\
+ \lvert \overrightarrow{A} \rvert^2 &= \lvert\overrightarrow{A_1}\rvert^2 +\lvert \overrightarrow{A_2}\rvert^2 + 2\lvert\overrightarrow{A_1}\rvert\lvert\overrightarrow{A_2}\rvert \cos \phi  \\
+\because I &\propto \lvert\overrightarrow{A}\rvert^2 
+\end{align}
 
 Let $I_1$ and $I_2$ be the intensity of two coherent waves. The resultant intensity is given by:
-
-$I_{\text{net}} = I_1 + I_2 + 2\sqrt{I_1I_2}\cos{\phi}$
-
+\begin{align}
+    I_{\text{net}} = I_1 + I_2 + 2\sqrt{I_1I_2}\cos{\phi}
+\end{align}
 Here, $\phi$ is the phase difference between two light waves.
 
 Intensities are equal for monochromatic light waves.
-
-\hspace{1cm}$I_1 = I_2$
-
-$\therefore$ $I_{\text{net}} = I_1 + I_1 + 2\sqrt{I_1I_1}\cos{\phi}$
-
-\vspace{0.2cm}
-
-       \hspace{0.2cm}      $I_{\text{net}} = 2I_1 + 2I_1\cos{\phi}$
-
+\begin{align}
+   I_1 &= I_2 \\
+\therefore I_{\text{net}} &= I_1 + I_1 + 2\sqrt{I_1I_1}\cos{\phi} \nonumber \\ 
+        I_{\text{net}} &= 2I_1 + 2I_1\cos{\phi}
+\end{align}
 $\because I_{\text{net}} = K$
+\begin{align}
+   \therefore K &= 2I_1 +2I_1\cos{2\pi} \nonumber \\
+    K &= 4I_1 \nonumber \\
+ \therefore    I_1&=\dfrac{K}{4} 
+\end{align}
 
-
-$\therefore K = 2I_1 +2I_1\cos{2\pi}$
-
-\vspace{0.2cm}
-
-        \hspace*{0.4cm}    K = 4$I_1$
-
-\vspace{0.2cm}
-
-      \hspace{1cm}  $\therefore    I_1=\dfrac{K}{4}$
-
-\vspace{1cm}
-
-When path difference = $\dfrac{\lambda}{3}$
-
-\vspace{0.2cm}
-
-\hspace{1cm}$\Delta \phi = \dfrac{2\pi}{\lambda}$  x $ \dfrac{\lambda}{3}$
-
-\vspace{0.2cm}
-
-Phase difference = $ \Delta \phi = \dfrac{2\pi}{3} $
-
+When path difference = $\dfrac{\lambda}{3}$ \\
+\begin{align}
+\Delta \phi &= \dfrac{2\pi}{\lambda}  x  \dfrac{\lambda}{3} \nonumber \\
+\text{Phase difference} &=  \Delta \phi = \dfrac{2\pi}{3}
+\end{align}
 Hence,
-
 \hspace*{0.5cm}Resultant intensity,
-\[I_{\text{R}} = 2I_1 + 2\sqrt{I_1I_1}\cos{\dfrac{2\pi}{3}}\]
-
-\[I_{\text{R}}= 2I_1 + 2I_1\left(\dfrac{-1}{2}\right)\]
-
-\[I_{\text{R}} = I_1\]
+\begin{align}
+I_{\text{R}} &= 2I_1 + 2\sqrt{I_1I_1}\cos{\dfrac{2\pi}{3}} \nonumber  \\
+I_{\text{R}} &= 2I_1 + 2I_1\left(\dfrac{-1}{2}\right)\nonumber \\
+I_{\text{R}} &= I_1
+\end{align}
 
 From the above result,
 \hspace*{0.5cm}
-\begin{align*}
-I_1 = \dfrac{K}{4}\\
-\therefore I_{\text{R}} = \dfrac{K}{4}
-\end{align*}
+\begin{align}
+I_1 &= \dfrac{K}{4} \nonumber \\
+\therefore I_{\text{R}} &= \dfrac{K}{4} 
+\end{align}
 
 Hence, the Intensity of light at a point where path difference is $\dfrac{\lambda}{3}$ is $\dfrac{K}{4}$ units.
 
