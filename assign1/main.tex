@@ -88,11 +88,11 @@ In, Young's double-slit experiment the light waves coming out from the source $S
 
 The equation of light wave coming out from the slit $S_1$ is:
 \begin{align}
-    y_1\brak{t} = A_1\sin{(\omega t - kx_1)} 
+    y_1\brak{t} = A_1\sin{(\omega t - kx_1)} \label{phase_1}
 \end{align}
 The equation of light wave coming out from the slit $S_2$ is:
 \begin{align}
-     y_2\brak{t} = A_2\sin{(\omega t - kx_2)}
+     y_2\brak{t} = A_2\sin{(\omega t - kx_2)} \label{phase_2}
 \end{align}
 
 where,
@@ -101,11 +101,11 @@ where,
 \hspace*{0.4cm} \phi_2 &= \omega t - kx_2 
 \end{align}
 
-$ \text{Subtracting equations}\brak{4} and \brak{5}  \Rightarrow{}$
+$ \text{Subtracting equations} \eqref{phase_1} and \eqref{phase_2} \Rightarrow{}$
 \begin{align}
    \phi_1 - \phi_2 &= \omega t - kx_1 -( \omega t - kx_2 ) \nonumber \\ 
    \Delta \phi &= k(x_2 - x_1) \nonumber \\ 
-    \Delta \phi &= \dfrac{2\pi}{\lambda}\Delta x 
+    \Delta \phi &= \dfrac{2\pi}{\lambda}\Delta x  \label{relation }
 \end{align}
 
 \hspace{0.3cm} Phase difference =$\dfrac{2\pi}{\lambda} \times$ Path difference
@@ -114,84 +114,58 @@ $ \text{Subtracting equations}\brak{4} and \brak{5}  \Rightarrow{}$
 
 The variation of distance covered by two waves from their sources to the point where they meet is known as Path difference.
 
-The disparity in phases of two particles at any two moments where their position and motion are the same is known as Phase difference.
+The disparity in phases of two particles at any two moments where their position and motion are the same is known as Phase difference. \\
+\hspace*{0.8cm} Since, the waves coming out from the slits are from the same source their frequency, wavelength, wave number and amplitude will be the same. 
+\begin{center}
+    $A_1 = A_2$ \\
+\end{center} 
+The resultant wave resulting from the superposition of the two waves is the sum of two individual waves: \\
+From $\eqref{phase_1} \& \eqref{phase_2} \Rightarrow$
+\begin{align}
+y_{res}\brak{t} &= y_1\brak{t} + y_2\brak{t}  \\
+y_{res}\brak{t} &= A\sin({\omega t - kx_1})  + &A\sin({ \omega t - kx_2}) \nonumber 
+\end{align}
+ $ \because \sin{A} + \sin{B} = 2\sin\left(\dfrac{C+D}{2}\right) \cos\left(\dfrac{C-D}{2}\right) $ 
+ 
+\begin{align}
+\Rightarrow y_\text{res} =  2A\sin\left( \omega t+\dfrac{k(x_1+x_2)}{2} \right) \nonumber \\
+\quad\cos\left(\dfrac{k(x_2 - x_1)}{2}\right) \\
+ \Rightarrow y_\text{res} =  2A\cos\left(\dfrac{k\Delta x}{2}\right) \nonumber \hspace*{2cm} \\ \quad \sin\left(\omega t - \dfrac{k(x_1+x_2)}{2} \right) 
+ \end{align}
 
-$\because$ path difference = $\lambda$
+Here,
+The amplitude of the resulting wave is: 
+\begin{align}
+A_\text{net} &= 2A\cos\left(\dfrac{k\Delta x}{2}\right)  \\ 
+\because I &\propto \lvert\overrightarrow{A}\rvert^2  \nonumber \\
+I &= KA^2_\text{net} \\
+\therefore I &= K\left(2A\cos\left(\dfrac{k\Delta x}{2}\right)\right)^2 \nonumber\\
+I &= 4KA^2\cos^2\left(\dfrac{k(x_2 - x_1) }{2}\right) \nonumber \\
+\therefore I &= 4I_o\cos^2\left(\dfrac{k\Delta x}{2}\right) 
+\end{align}
+
+From  $\eqref{relation } \Rightarrow $ \\
+  \hspace*{2.5cm} $k\Delta x = \Delta \phi$  
+\begin{align} \hspace*{-2cm}
+\therefore I_\text{net} = 4I_o\cos^2\left(\dfrac{\Delta \phi}{2}\right) \label{intensity}
+\end{align}
+
+The intensity of light is defined as the energy transmitted per unit area in one unit of time. The square of the wave's amplitude is generally determined as the intensity of the light.Intensities are equal for monochromatic light waves.\\
+$\because$ path difference = $\lambda$ \\
+\hspace*{0.4cm}From $\eqref{relation } \Rightarrow$
 \begin{align}
 \Delta \phi &= \dfrac{2\pi}{\lambda}  \times \lambda \nonumber \\
 \text{Phase difference} &= \Delta \phi = 2\pi
 \end{align}
 
-The intensity of light is defined as the energy transmitted per unit area in one unit of time. The square of the wave's amplitude is generally determined as the intensity of the light. 
-Let at an arbitrary point the phase difference between the two displacements produced by the waves be $y_1$ and $y_2$ be $\phi$.\\
-Thus, the displacement produced by $y_1$ is given by:
-\begin{align}
-    y_1\brak{t} &= A\sin(kx_1 - \omega t + \phi)
-\end{align}
-The displacement produced by $y_2$ is given by:
-\begin{align}
-    y_2\brak{t} &= A\sin(kx_2 - \omega t )
-\end{align}
-The resultant wave resulting from the superposition of the two waves is the sum of two individual waves:
-\begin{align}
-y_{res}\brak{t} &= y_1\brak{t} + y_2\brak{t}  \\
-y_{res}\brak{t} &= A\sin({kx_1 - \omega t + \phi}) \nonumber \\ 
-+ &A\sin({kx_2 - \omega t}) \nonumber 
-\end{align}
- $ \because \sin{A} + \sin{B} = 2\sin\left(\dfrac{C+D}{2}\right) \cos\left(\dfrac{C-D}{2}\right) $ 
- 
-\begin{align}
-\Rightarrow y_\text{res} =  2A\sin\left(\dfrac{k(x_1+x_2)}{2} - \omega t+\dfrac{\phi}{2}\right) \nonumber \\
-\quad\cos\left(\dfrac{k(x_1 - x_2)}{2} + \dfrac{\phi}{2}\right) \\
- \Rightarrow y_\text{res} =  2A\cos\left(\dfrac{k\Delta x}{2} + \dfrac{\phi}{2}\right) \nonumber \hspace*{2cm} \\ \quad \sin\left(\dfrac{k(x_1+x_2)}{2} - \omega t+\dfrac{\phi}{2}\right) 
- \end{align}
-
-Here,
-The amplitude of the resulting wave is: 
-\begin{align}\hspace*{-2cm}
-A_\text{net} &= 2A\cos\left(\dfrac{k\Delta x}{2} + \dfrac{\phi}{2}\right)  \\ 
-\because I &\propto \lvert\overrightarrow{A}\rvert^2  \nonumber \\
-I &= KA^2_\text{net} \\
-\therefore I &= K\left(2A\cos\left(\dfrac{k\Delta x}{2} + \dfrac{\phi}{2}\right)\right)^2 \\
-I &= 4KA^2\cos^2\left(\dfrac{k(x_1 - x_2) + \phi}{2}\right) \\
-\therefore I &= 4I_o\cos^2\left(\dfrac{k(x_1 - x_2) + \phi}{2}\right) 
-\end{align}
-Let, 
-\begin{align}
-    \left(\dfrac{k(x_1 - x_2) + \phi}{2}\right) = \Delta \phi  \\
-\therefore I  = 4I_o\cos^2\left(\dfrac{\Delta \phi}{2}\right) 
-\end{align}
-
-
-
-In the general case of two waves of different amplitude interfering, then the amplitude of the net resulting wave is the vector addition of individual amplitude: \\
-\hspace{0.8cm} 
-\begin{align}
- \because \overrightarrow{A} &= \overrightarrow{A_1} + \overrightarrow{A_2} \nonumber \\
- \lvert \overrightarrow{A} \rvert^2 &= \lvert\overrightarrow{A_1}\rvert^2 +\lvert \overrightarrow{A_2}\rvert^2 + 2\lvert\overrightarrow{A_1}\rvert\lvert\overrightarrow{A_2}\rvert \cos \phi  \\
-\because I &\propto \lvert\overrightarrow{A}\rvert^2 
-\end{align}
-
-Let $I_1$ and $I_2$ be the intensity of two coherent waves. The resultant intensity is given by:
-\begin{align}
-    I_{\text{net}} = I_1 + I_2 + 2\sqrt{I_1I_2}\cos{\phi}
-\end{align}
-Here, $\phi$ is the phase difference between two light waves.
-
-Intensities are equal for monochromatic light waves.
-\begin{align}
-   I_1 &= I_2 \\
-\therefore I_{\text{net}} &= I_1 + I_1 + 2\sqrt{I_1I_1}\cos{\phi} \nonumber \\ 
-        I_{\text{net}} &= 2I_1 + 2I_1\cos{\phi}
-\end{align}
 $\because I_{\text{net}} = K$
 \begin{align}
-   \therefore K &= 2I_1 +2I_1\cos{2\pi} \nonumber \\
+   \therefore K &= 4I_1\cos^2\left(\dfrac{2\pi}{2}\right) \nonumber \\
     K &= 4I_1 \nonumber \\
- \therefore    I_1&=\dfrac{K}{4} 
+ \therefore    I_1&=\dfrac{K}{4} \label{eq}
 \end{align}
-
 When path difference = $\dfrac{\lambda}{3}$ \\
+From $\eqref{relation } \Rightarrow$
 \begin{align}
 \Delta \phi &= \dfrac{2\pi}{\lambda}  \times  \dfrac{\lambda}{3} \nonumber \\
 \text{Phase difference} &=  \Delta \phi = \dfrac{2\pi}{3}
@@ -199,15 +173,16 @@ When path difference = $\dfrac{\lambda}{3}$ \\
 Hence,
 \hspace*{0.5cm}Resultant intensity,
 \begin{align}
-I_{\text{R}} &= 2I_1 + 2\sqrt{I_1I_1}\cos{\dfrac{2\pi}{3}} \nonumber  \\
-I_{\text{R}} &= 2I_1 + 2I_1\left(\dfrac{-1}{2}\right)\nonumber \\
+I_{\text{R}} &= 4I_o\cos^2\left(\dfrac{2\pi}{3}\right) \nonumber  \\
+I_{\text{R}} &= 4I_o\left(\dfrac{-1}{2}\right)^2\nonumber \\
+I_{\text{R}} &= 4I_o\left(\dfrac{1}{4}\right)\nonumber \\
 I_{\text{R}} &= I_1
 \end{align}
 
-From the above result,
+From the above result $ \eqref{eq} \Rightarrow$
 \hspace*{0.5cm}
 \begin{align}
-I_1 &= \dfrac{K}{4} \nonumber \\
+i.e.,  \,\,\,\, I_1 &= \dfrac{K}{4} \nonumber \\
 \therefore I_{\text{R}} &= \dfrac{K}{4} 
 \end{align}
 
