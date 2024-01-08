@@ -122,16 +122,50 @@ $\because$ path difference = $\lambda$
 \text{Phase difference} &= \Delta \phi = 2\pi
 \end{align}
 
-The intensity of light is defined as the energy transmitted per unit area in one unit of time. The square of the amplitude of the wave is generally determined as the intensity of the light. 
+The intensity of light is defined as the energy transmitted per unit area in one unit of time. The square of the wave's amplitude is generally determined as the intensity of the light. 
 Let at an arbitrary point the phase difference between the two displacements produced by the waves be $y_1$ and $y_2$ be $\phi$.\\
-Thus, the displacement produced by $y_1$ is given by:\
+Thus, the displacement produced by $y_1$ is given by:
 \begin{align}
-    y_1\brak{t} &= A_1cos(\omega t )
+    y_1\brak{t} &= A\sin(kx_1 - \omega t + \phi)
 \end{align}
 The displacement produced by $y_2$ is given by:
 \begin{align}
-    y_2\brak{t} &= A_2cos(\omega t + \phi)
+    y_2\brak{t} &= A\sin(kx_2 - \omega t )
 \end{align}
+The resultant wave resulting from the superposition of the two waves is the sum of two individual waves:
+\begin{align}
+y_{res}\brak{t} &= y_1\brak{t} + y_2\brak{t}  \\
+y_{res}\brak{t} &= A\sin({kx_1 - \omega t + \phi}) \nonumber \\ 
++ &A\sin({kx_2 - \omega t}) \nonumber 
+\end{align}
+ $ \because \sin{A} + \sin{B} = 2\sin\left(\dfrac{C+D}{2}\right) \cos\left(\dfrac{C-D}{2}\right) $ 
+ 
+\begin{align}
+\Rightarrow y_\text{res} =  2A\sin\left(\dfrac{k(x_1+x_2)}{2} - \omega t+\dfrac{\phi}{2}\right) \nonumber \\
+\quad\cos\left(\dfrac{k(x_1 - x_2)}{2} + \dfrac{\phi}{2}\right) \\
+ \Rightarrow y_\text{res} =  2A\cos\left(\dfrac{k\Delta x}{2} + \dfrac{\phi}{2}\right) \nonumber \hspace*{2cm} \\ \quad \sin\left(\dfrac{k(x_1+x_2)}{2} - \omega t+\dfrac{\phi}{2}\right) 
+ \end{align}
+
+Here,
+The amplitude of the resulting wave is: 
+\begin{align}\hspace*{-2cm}
+A_\text{net} &= 2A\cos\left(\dfrac{k\Delta x}{2} + \dfrac{\phi}{2}\right)  \\ 
+\because I &\propto \lvert\overrightarrow{A}\rvert^2  \nonumber \\
+I &= KA^2_\text{net} \\
+\therefore I &= K\left(2A\cos\left(\dfrac{k\Delta x}{2} + \dfrac{\phi}{2}\right)\right)^2 \\
+I &= 4KA^2\cos^2\left(\dfrac{k(x_1 - x_2) + \phi}{2}\right) \\
+\therefore I &= 4I_o\cos^2\left(\dfrac{k(x_1 - x_2) + \phi}{2}\right) 
+\end{align}
+Let, 
+\begin{align}
+    \left(\dfrac{k(x_1 - x_2) + \phi}{2}\right) = \Delta \phi  \\
+\therefore I  = 4I_o\cos^2\left(\dfrac{\Delta \phi}{2}\right) 
+\end{align}
+
+
+
+In the general case of two waves of different amplitude interfering, then the amplitude of the net resulting wave is the vector addition of individual amplitude: \\
+\hspace{0.8cm} 
 \begin{align}
  \because \overrightarrow{A} &= \overrightarrow{A_1} + \overrightarrow{A_2} \nonumber \\
  \lvert \overrightarrow{A} \rvert^2 &= \lvert\overrightarrow{A_1}\rvert^2 +\lvert \overrightarrow{A_2}\rvert^2 + 2\lvert\overrightarrow{A_1}\rvert\lvert\overrightarrow{A_2}\rvert \cos \phi  \\
