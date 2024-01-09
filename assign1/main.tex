@@ -47,7 +47,7 @@
 \vspace{3cm}
 
 \title{NCERT 12.10 5Q}
-\author{EE23BTECH11013 - Avyaaz$^{*}$% <-this % stops a space
+\author{EE23BTECH11013 - Avyaaz$^{*}$% <-this % stops a space 
 }
 \maketitle
 \newpage
@@ -60,7 +60,6 @@
 In Young’s double-slit experiment using monochromatic light of wavelength $\lambda$, the intensity of light at a point on the screen where path difference is $\lambda$, is $K$ units. What is the intensity of light at a
 point where path difference is $\lambda$/3?\\
 \large\textbf{\textsl{Solution:}}\\
-Given,\\
 \begin{table}[htbp]
 \centering
 \input{tables/table}
@@ -69,18 +68,17 @@ Given,\\
 \label{tab:parameters}
 \end{table}
 
-\hspace*{1cm}Path difference = $\lambda$
+%\hspace*{1cm}Path difference = $\lambda$
 
-The general equation of light wave is:
-\begin{align}
-       y\brak{t} &= A\sin{(\omega t - kx)} \label{eq:lightwave}
-\end{align}
+% The general equation of light wave is:
+% \begin{align}
+%        y\brak{t} &= A\sin{(\omega t - kx)} \label{eq:lightwave}
+% \end{align}
 
- where,
- \begin{align}
- \text{phase} = \phi &= \omega t - kx \nonumber \\
- \text{wave number} &= k = \dfrac{2\pi}{\lambda} \nonumber 
- \end{align}
+%  where,
+%  \begin{align}
+%  \text{phase} = \phi &= \omega t - kx \nonumber  
+%  \end{align}
 
 In, Young's double-slit experiment the light waves coming out from the source $S$ fall on both $S_1$ and $S_2$ slits which behave like coherent sources since the light waves coming from both slits are from the same original source. Hence, the light waves coming out from the slits are coherent.
 
@@ -94,94 +92,50 @@ The equation of light wave coming out from the slit $S_2$ is:
 \begin{align}
      y_2\brak{t} = A_2\sin{(\omega t - kx_2)} \label{phase_2}
 \end{align}
-\vspace{-0.5cm}
-where,
-\begin{align}
- \therefore \phi_1 &= \omega t - kx_1 \\
-\hspace*{0.4cm} \phi_2 &= \omega t - kx_2 
-\end{align}
+
 \hspace*{0.8cm} Since, the waves coming out from the slits are from the same source their frequency, wavelength, wave number and amplitude will be the same. 
 \begin{center}
     $A_1 = A_2$ \\
 \end{center} 
 The resultant wave resulting from the superposition of the two waves is the sum of two individual waves: \\
-From $\eqref{phase_1} \& \eqref{phase_2} \Rightarrow$
+From $\eqref{phase_1} \& \eqref{phase_2} \implies$
 \begin{align}
 y_{res}\brak{t} &= y_1\brak{t} + y_2\brak{t}  \\
 y_{res}\brak{t} &= A\sin({\omega t - kx_1})  + &A\sin({ \omega t - kx_2}) \nonumber 
 \end{align}
  $ \because \sin{A} + \sin{B} = 2\sin\left(\dfrac{C+D}{2}\right) \cos\left(\dfrac{C-D}{2}\right) $ 
- 
 \begin{align}
-\Rightarrow y_\text{res} =  2A\sin\left( \omega t+\dfrac{k(x_1+x_2)}{2} \right) \nonumber \\
-\quad\cos\left(\dfrac{k(x_2 - x_1)}{2}\right) \\
- \Rightarrow y_\text{res} =  2A\cos\left(\dfrac{k\Delta x}{2}\right) \nonumber \hspace*{2cm} \\ \quad \sin\left(\omega t - \dfrac{k(x_1+x_2)}{2} \right) 
+ \implies y_\text{res} =  2A\cos\left(\dfrac{k\Delta x}{2}\right) \nonumber \hspace*{2cm} \\ \quad \sin\left(\omega t - \dfrac{k(x_1+x_2)}{2} \right) 
  \end{align}
-
-Here,
 The amplitude of the resulting wave is: 
 \begin{align}
 A_\text{net} &= 2A\cos\left(\dfrac{k\Delta x}{2}\right)  \\ 
-\because I &\propto \lvert\overrightarrow{A}\rvert^2  \nonumber \\
-I &= KA^2_\text{net} \\
+%I &= KA^2_\text{net} \\
+\text{From table }\eqref{tab:parameters} \implies \nonumber \\
 \therefore I &= K\left(2A\cos\left(\dfrac{k\Delta x}{2}\right)\right)^2 \nonumber\\
-I &= 4KA^2\cos^2\left(\dfrac{k(x_2 - x_1) }{2}\right) \nonumber \\
-\therefore I &= 4I_o\cos^2\left(\dfrac{k\Delta x}{2}\right) 
+%%I &= 4KA^2\cos^2\left(\dfrac{k(x_2 - x_1) }{2}\right) \nonumber \\
+\therefore I &= 4I_o\cos^2\left(\dfrac{k\Delta x}{2}\right)  \label{intensity}
 \end{align}
-
-$ \text{Subtracting equations} \eqref{phase_1} and \eqref{phase_2} \Rightarrow{}$
-\begin{align}
-   \phi_1 - \phi_2 &= \omega t - kx_1 -( \omega t - kx_2 ) \nonumber \\ 
-   \Delta \phi &= k(x_2 - x_1) \nonumber \\ 
-    \Delta \phi &= \dfrac{2\pi}{\lambda}\Delta x  \label{relation }
-\end{align}
-
-\hspace{0.3cm} Phase difference =$\dfrac{2\pi}{\lambda} \times$ Path difference
-
-From  $\eqref{relation } \Rightarrow $ \\
-  \hspace*{2.5cm} $k\Delta x = \Delta \phi$  
-\begin{align} \hspace*{-2cm}
-\therefore I_\text{net} = 4I_o\cos^2\left(\dfrac{\Delta \phi}{2}\right) \label{intensity}
-\end{align}
-
-The intensity of light is defined as the energy transmitted per unit area in one unit of time. The square of the wave's amplitude is generally determined as the intensity of the light.Intensities are equal for monochromatic light waves.\\
-
-\vspace{0.2cm}
-
-The variation of distance covered by two waves from their sources to the point where they meet is known as Path difference.
-
-The disparity in phases of two particles at any two moments where their position and motion are the same is known as Phase difference. \\
-
-$\because$ path difference = $\lambda$ \\
-\hspace*{0.4cm}From $\eqref{relation } \Rightarrow$
-\begin{align}
-\Delta \phi &= \dfrac{2\pi}{\lambda}  \times \lambda \nonumber \\
-\text{Phase difference} &= \Delta \phi = 2\pi
-\end{align}
-
-$\because I_{\text{net}} = K$ \\
-From, $\eqref{intensity} \Rightarrow$
+From table$ \eqref{tab:parameters} \implies$ \\
+ \hspace*{1.8cm}When $\Delta x = \lambda$ \\
+%%$\because I_{\text{net}} = K$ \\
+From, $\eqref{intensity} \implies$
 \begin{align}
    \therefore K &= 4I_1\cos^2\left(\dfrac{2\pi}{2}\right) \nonumber \\
     K &= 4I_1 \nonumber \\
  \therefore    I_1&=\dfrac{K}{4} \label{eq}
 \end{align}
-When path difference = $\dfrac{\lambda}{3}$ \\
-From $\eqref{relation } \Rightarrow$
+From table $\eqref{tab:parameters} \& \eqref{intensity} \implies$ \\
+\hspace*{1.8cm}When $\Delta x = \dfrac{\lambda}{3}$ : \\
+Resultant intensity:
 \begin{align}
-\Delta \phi &= \dfrac{2\pi}{\lambda}  \times  \dfrac{\lambda}{3} \nonumber \\
-\text{Phase difference} &=  \Delta \phi = \dfrac{2\pi}{3}
-\end{align}
-Hence,
-\hspace*{0.5cm}Resultant intensity,
-\begin{align}
-I_{\text{R}} &= 4I_o\cos^2\left(\dfrac{2\pi}{3}\right) \nonumber  \\
-I_{\text{R}} &= 4I_o\left(\dfrac{-1}{2}\right)^2\nonumber \\
-I_{\text{R}} &= 4I_o\left(\dfrac{1}{4}\right)\nonumber \\
+I_{\text{R}} &= 4I_1\cos^2\left(\dfrac{2\pi}{3}\right) \nonumber  \\
+I_{\text{R}} &= 4I_1\left(\dfrac{-1}{2}\right)^2\nonumber \\
+%%I_{\text{R}} &= 4I_1\left(\dfrac{1}{4}\right)\nonumber \\
 I_{\text{R}} &= I_1
 \end{align}
 
-From the above result $ \eqref{eq} \Rightarrow$
+From the above result $ \eqref{eq} \implies$
 \hspace*{0.5cm}
 \begin{align}
 i.e.,  \,\,\,\, I_1 &= \dfrac{K}{4} \nonumber \\
