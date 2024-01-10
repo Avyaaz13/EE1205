@@ -41,6 +41,7 @@
 \newcommand{\define}{\stackrel{\triangle}{=}}
 \theoremstyle{remark}
 \newtheorem{rem}{Remark}
+
 \begin{document}
 
 \bibliographystyle{IEEEtran}
@@ -59,7 +60,7 @@
 \large\textbf{\textsl{Question:}}
 In Young’s double-slit experiment using monochromatic light of wavelength $\lambda$, the intensity of light at a point on the screen where path difference is $\lambda$, is $K$ units. What is the intensity of light at a
 point where path difference is $\lambda$/3?\\
-\large\textbf{\textsl{Solution:}}\\
+\large\textbf{\textsl{Solution:}}
 \begin{table}[htbp]
 \centering
 \input{tables/table}
@@ -80,66 +81,57 @@ point where path difference is $\lambda$/3?\\
 %  \text{phase} = \phi &= \omega t - kx \nonumber  
 %  \end{align}
 
-In, Young's double-slit experiment the light waves coming out from the source $S$ fall on both $S_1$ and $S_2$ slits which behave like coherent sources since the light waves coming from both slits are from the same original source. Hence, the light waves coming out from the slits are coherent.
+In YDSE, light waves coming from the source $S$ fall on both $S_1$ and $S_2$ slits which behave like coherent sources since the light waves are coming from the same source implying that their frequency, wavelength, wave number and amplitude will be the same. 
 
 \vspace{0.3cm}
 
 The equation of light wave coming out from the slit $S_1$ is:
 \begin{align}
-    y_1\brak{t} = A_1\sin{(\omega t - kx_1)} \label{phase_1}
+    y_1\brak{t} = A\sin{(\omega t - kx_1)} \label{phase_1}
 \end{align}
 The equation of light wave coming out from the slit $S_2$ is:
 \begin{align}
-     y_2\brak{t} = A_2\sin{(\omega t - kx_2)} \label{phase_2}
+     y_2\brak{t} = A\sin{(\omega t - kx_2)} \label{phase_2}
 \end{align}
-
-\hspace*{0.8cm} Since, the waves coming out from the slits are from the same source their frequency, wavelength, wave number and amplitude will be the same. 
-\begin{center}
-    $A_1 = A_2$ \\
-\end{center} 
-The resultant wave resulting from the superposition of the two waves is the sum of two individual waves: \\
+The superposition of the two waves is the sum of two individual waves: \\
 From $\eqref{phase_1} \& \eqref{phase_2} \implies$
 \begin{align}
-y_{res}\brak{t} &= y_1\brak{t} + y_2\brak{t}  \\
-y_{res}\brak{t} &= A\sin({\omega t - kx_1})  + &A\sin({ \omega t - kx_2}) \nonumber 
+y\brak{t} &= y_1\brak{t} + y_2\brak{t}  \\
+y\brak{t} &= A\sin({\omega t - kx_1})  + A\sin({ \omega t - kx_2}) \nonumber \\
+y\brak{t} &=  2A\cos\left(\dfrac{k\Delta x}{2}\right)\sin\left(\omega t - \dfrac{k(x_1+x_2)}{2} \right) \label{superpos}
 \end{align}
- $ \because \sin{A} + \sin{B} = 2\sin\left(\dfrac{C+D}{2}\right) \cos\left(\dfrac{C-D}{2}\right) $ 
+%% $ \because \sin{A} + \sin{B} = 2\sin\left(\dfrac{C+D}{2}\right) \cos\left(\dfrac{C-D}{2}\right) $ 
+%\begin{align}
+% y\brak{t} =  2A\cos\left(\dfrac{k\Delta x}{2}\right) \nonumber \hspace*{2cm} \\ \quad \sin\left(\omega t - \dfrac{k(x_1+x_2)}{2} \right) \label{superpos}
+%  \end{align}
+$\text{From table }\eqref{tab:parameters}\, \& \,\text{equation}\eqref{superpos} \implies $ 
 \begin{align}
- \implies y_\text{res} =  2A\cos\left(\dfrac{k\Delta x}{2}\right) \nonumber \hspace*{2cm} \\ \quad \sin\left(\omega t - \dfrac{k(x_1+x_2)}{2} \right) 
- \end{align}
-The amplitude of the resulting wave is: 
-\begin{align}
-A_\text{net} &= 2A\cos\left(\dfrac{k\Delta x}{2}\right)  \\ 
-%I &= KA^2_\text{net} \\
-\text{From table }\eqref{tab:parameters} \implies \nonumber \\
-\therefore I &= K\left(2A\cos\left(\dfrac{k\Delta x}{2}\right)\right)^2 \nonumber\\
+%\therefore I &= K\left(2A\cos\left(\dfrac{k\Delta x}{2}\right)\right)^2 \nonumber\\
 %%I &= 4KA^2\cos^2\left(\dfrac{k(x_2 - x_1) }{2}\right) \nonumber \\
 \therefore I &= 4I_o\cos^2\left(\dfrac{k\Delta x}{2}\right)  \label{intensity}
 \end{align}
-From table$ \eqref{tab:parameters} \implies$ \\
- \hspace*{1.8cm}When $\Delta x = \lambda$ \\
+When $\Delta x = \lambda$ : \\
+From table$ \eqref{tab:parameters} \& \,\text{equation}\eqref{intensity} \implies$ 
 %%$\because I_{\text{net}} = K$ \\
-From, $\eqref{intensity} \implies$
 \begin{align}
-   \therefore K &= 4I_1\cos^2\left(\dfrac{2\pi}{2}\right) \nonumber \\
-    K &= 4I_1 \nonumber \\
- \therefore    I_1&=\dfrac{K}{4} \label{eq}
+  K &= 4I_1\cos^2\left(\dfrac{2\pi}{2}\right)  \\
+  %  K &= 4I_1 \nonumber
+ \therefore I_1&=\dfrac{K}{4} \label{eq}
 \end{align}
-From table $\eqref{tab:parameters} \& \eqref{intensity} \implies$ \\
-\hspace*{1.8cm}When $\Delta x = \dfrac{\lambda}{3}$ : \\
-Resultant intensity:
+When $\Delta x = \dfrac{\lambda}{3}$ : \\
+From table $\eqref{tab:parameters} \& \eqref{intensity} \implies$ 
 \begin{align}
-I_{\text{R}} &= 4I_1\cos^2\left(\dfrac{2\pi}{3}\right) \nonumber  \\
-I_{\text{R}} &= 4I_1\left(\dfrac{-1}{2}\right)^2\nonumber \\
+\text{Resultant intensity}:I_r &= 4I_1\cos^2\left(\dfrac{2\pi}{3}\right) \nonumber  \\
+%%I &= 4I_1\left(\dfrac{-1}{2}\right)^2\nonumber \\
 %%I_{\text{R}} &= 4I_1\left(\dfrac{1}{4}\right)\nonumber \\
-I_{\text{R}} &= I_1
+I_r &= I_1
 \end{align}
 
-From the above result $ \eqref{eq} \implies$
+From equation $ \eqref{eq} \implies$
 \hspace*{0.5cm}
 \begin{align}
-i.e.,  \,\,\,\, I_1 &= \dfrac{K}{4} \nonumber \\
-\therefore I_{\text{R}} &= \dfrac{K}{4} 
+ \,\,\,\, \therefore I_r &= I_1 =\dfrac{K}{4} 
+%\therefore I &= \dfrac{K}{4} 
 \end{align}
 
 Hence, the Intensity of light at a point where path difference is $\dfrac{\lambda}{3}$ is $\dfrac{K}{4}$ units.
