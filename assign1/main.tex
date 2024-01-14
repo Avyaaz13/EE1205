@@ -62,85 +62,35 @@ In Young’s double-slit experiment using monochromatic light of wavelength $\la
 point where path difference is $\lambda$/3?\\
 \large\textbf{\textsl{Solution:}}
 \begin{table}[htbp]
+\setlength{\extrarowheight}{8pt}
 \centering
 \input{tables/table}
 \vspace{0.2cm}
-\caption{\normalsize $Parameters$}
+\caption{}
 \label{tab:parameters}
-\end{table}
-
-%\hspace*{1cm}Path difference = $\lambda$
-
-% The general equation of light wave is:
-% \begin{align}
-%        y\brak{t} &= A\sin{(\omega t - kx)} \label{eq:lightwave}
-% \end{align}
-
-%  where,
-%  \begin{align}
-%  \text{phase} = \phi &= \omega t - kx \nonumber  
-%  \end{align}
-
-% In YDSE, light waves coming from the source $S$ fall on both $S_1$ and $S_2$ slits which behave like coherent sources since the light waves are coming from the same source implying that their frequency, wavelength, wave number and amplitude will be the same. 
-
-% \vspace{0.3cm}
-
-% The equation of light wave coming out from the slit $S_1$ is:
-% \begin{align}
-%     y_1\brak{t} = A\sin{(\omega t - kx_1)} \label{phase_1}
-% \end{align}
-% The equation of light wave coming out from the slit $S_2$ is:
-% \begin{align}
-%      y_2\brak{t} = A\sin{(\omega t - kx_2)} \label{phase_2}
-% \end{align}
-The superposition of the two waves is the sum of two individual waves: \\
-From table $\eqref{tab:parameters} \implies$
+\end{table}\\
+From \tabref{tab:parameters}:
 \begin{align}
 %%y\brak{t} &= y_1\brak{t} + y_2\brak{t}  \\
-y\brak{t} &= A\sin({\omega t - kx_1})  + A\sin({ \omega t - kx_2}) \\
-y\brak{t} &=  2A\cos\left(\dfrac{k\Delta x}{2}\right)\sin\left(\omega t - \dfrac{k(x_1+x_2)}{2} \right) \label{superpos}
+y\brak{t} &= A\sin({2\pi f t - kx_1})  + A\sin({ 2\pi f t - kx_2}) \\
+y\brak{t} &=  2A\cos\left(\dfrac{k\Delta x}{2}\right)\sin\left(2\pi f t - \dfrac{k(x_1+x_2)}{2} \right) \label{eq:superposition}
 \end{align}
-%% $ \because \sin{A} + \sin{B} = 2\sin\left(\dfrac{C+D}{2}\right) \cos\left(\dfrac{C-D}{2}\right) $ 
-%\begin{align}
-% y\brak{t} =  2A\cos\left(\dfrac{k\Delta x}{2}\right) \nonumber \hspace*{2cm} \\ \quad \sin\left(\omega t - \dfrac{k(x_1+x_2)}{2} \right) \label{superpos}
-%  \end{align}
-$\text{From table }\eqref{tab:parameters}\, \& \,\text{equation}\eqref{superpos} \implies $ 
+From \tabref{tab:parameters} \&  equation \eqref{eq:superposition}: 
 \begin{align}
-%\therefore I &= K\left(2A\cos\left(\dfrac{k\Delta x}{2}\right)\right)^2 \nonumber\\
-%%I &= 4KA^2\cos^2\left(\dfrac{k(x_2 - x_1) }{2}\right) \nonumber \\
-\therefore I_{res} &= 4I_o\cos^2\left(\dfrac{k\Delta x}{2}\right)  \label{intensity}
+\therefore I \propto 4A^2\cos^2\left(\dfrac{k\Delta x}{2}\right)  \label{eq:intensity}
 \end{align}
-From table$ \eqref{tab:parameters} \& \,\text{equation}\eqref{intensity} \implies$
-\begin{enumerate}[label=(\roman*)]
-\item When $\Delta x = \lambda$ : 
+From \tabref{tab:parameters} \& \,equation \eqref{eq:intensity}: 
 \begin{align}
-  K &= 4I_1\cos^2\left(\dfrac{2\pi}{2}\right)  \\
-  %  K &= 4I_1 \nonumber
- \therefore I_1&=\dfrac{K}{4} \label{eq}
-\end{align}
-\item When $\Delta x = \dfrac{\lambda}{3}$ : 
-%%From table $\eqref{tab:parameters} \& \eqref{intensity} \implies$ 
-\begin{align}
-I_r &= 4I_1\cos^2\left(\dfrac{2\pi}{3}\right)   
-%%I &= 4I_1\left(\dfrac{-1}{2}\right)^2\nonumber \\
-%%I_{\text{R}} &= 4I_1\left(\dfrac{1}{4}\right)\nonumber \\
-%%I_r &= I_1
-\end{align}
-
-From equation $ \eqref{eq} \implies$
-\hspace*{0.5cm}
-\begin{align}
-\hspace{-1.2cm}\therefore I_r &= I_1 =\dfrac{K}{4} 
-%\therefore I &= \dfrac{K}{4} 
-\end{align}
-\end{enumerate}
-\,\,\,Hence, the Intensity of light at a point where path difference is $\dfrac{\lambda}{3}$ is $\dfrac{K}{4}$ units.
+ \dfrac{K}{I_r} = \dfrac{4A^2\cos^2\left(\dfrac{2\pi}{2}\right)}{4A^2\cos^2\left(\dfrac{\pi}{3}\right)}
+ \implies I_r = \dfrac{K}{4}
+ \end{align}
+\,\,\, Hence, the Intensity of light at a point where path difference is $\dfrac{\lambda}{3}$ is $\dfrac{K}{4}$ units.
 
 \begin{table}[htbp]
 \centering
 \input{tables/table1}
 \vspace{0.2cm}
-\caption{ $Intensities$}
+\caption{}
 \label{tab:parameters1}
 \end{table}
 \bibliographystyle{IEEEtran}
