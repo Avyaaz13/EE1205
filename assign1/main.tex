@@ -17,7 +17,8 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{tkz-euclide} 
 \usepackage{listings}
-\usepackage{gvv}                                        
+\usepackage{gvv} 
+\usepackage{caption}
 \def\inputGnumericTable{}                                 
 %\usepackage[latin1]{inputenc}                                
 \usepackage{color}                                            
@@ -54,7 +55,7 @@
 \newpage
 \bigskip
 
-\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thefigure}{\arabic{figure}}
 \renewcommand{\thetable}{\arabic{table}}
 
 \large\textbf{\textsl{Question:}}
@@ -93,5 +94,13 @@ From \tabref{tab:parameters} \& \,equation \eqref{eq:intensity}:
 \caption{}
 \label{tab:parameters1}
 \end{table}
+Assuming $\Delta x= r\lambda$,  \\
+\phantom{as}From equation \eqref{eq:intensity}:
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = \columnwidth]{figs/Intensity plot.png}
+  \caption{}
+    \label{fig:graph1}
+\end{figure}
 \bibliographystyle{IEEEtran}
 \end{document}
