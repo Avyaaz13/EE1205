@@ -70,12 +70,12 @@ Find the $20^{th}$ and $n^{th}$ terms of the G.P $\frac{5}{2}$, $\frac{5}{4}$, $
 % \begin{align}
 %    x(n) = \dfrac{5}{2}\left(\dfrac{1}{2}\right)^n 
 % \end{align}
-\(Z\)-Transform of \(x(n)\):
-\begin{align}
-	x \brak{n} & \system{Z} X \brak{z} \\
-   % x(n) &=\dfrac{5}{2}\left(\dfrac{1}{2}\right)^n u(n) \\
-    \therefore X(z) &= \sum_{n=-\infty}^{\infty}x(n)z^{-n}\label{eq:z-transform}  
-\end{align}
+
+% \begin{align}
+% 	x \brak{n} & \system{Z} X \brak{z} \\
+%    % x(n) &=\dfrac{5}{2}\left(\dfrac{1}{2}\right)^n u(n) \\
+%     \therefore X(z) &= \sum_{n=-\infty}^{\infty}x(n)z^{-n}\label{eq:z-transform}  
+% \end{align}
 % Here, 
 %          $    u(n) = \begin{cases}
 %                 0 &\text{for } n < 0 \\
@@ -83,18 +83,19 @@ Find the $20^{th}$ and $n^{th}$ terms of the G.P $\frac{5}{2}$, $\frac{5}{4}$, $
 %             \end{cases}$       
  
 %  \vspace{1cm}
-\text{From \tabref{tab:table1}}:
+From \tabref{tab:table1}:
+\(Z\)-Transform of \(x(n)\):
 \begin{align}
-\implies X(z) &= \sum_{n=-\infty}^{\infty}\left(\dfrac{5}{2}\left(\dfrac{1}{2}\right)^n u(n)\right) z^{-n} \\
- \implies X(z) &= \dfrac{5}{2}\sum_{n=0}^{\infty}\left(\dfrac{z
- ^{-1}}{2}\right)^n \\
+% \implies X(z) &= \sum_{n=-\infty}^{\infty}\left(\dfrac{5}{2}\left(\dfrac{1}{2}\right)^n u(n)\right) z^{-n} \\
+ % \implies X(z) &= \dfrac{5}{2}\sum_{n=0}^{\infty}\left(\dfrac{z
+ % ^{-1}}{2}\right)^n \\
 \implies X(z) &=\dfrac{5}{2}\left(\dfrac{1}{1-\frac{z^{-1}}{2}}\right) ;\cbrak{z\in\mathbb{C} : |z|>\dfrac{1}{2}}
 \end{align}
-\vspace{5cm}
+
 \begin{figure}[ht]
     \centering
-    \includegraphics[width = \columnwidth]{figs/stem plot.png}
-  \caption{}
+    \includegraphics[width = \columnwidth]{figs/stem_plot.png}
+    \caption{}
     \label{fig:graph1}
 \end{figure} 
 
