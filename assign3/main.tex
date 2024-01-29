@@ -63,11 +63,10 @@
 The number of zeroes of the polynomial $P(s) = s^3+2s^2+5s+80$ in the right side of the plane?\hfill(GATE IN 2023) \\
 \solution
 
-The table below shows the Routh array of the $n^{th}$- order characteristic polynomial : 
+\noindent General $n^{th}$-order characteristic polynomial : 
 \begin{align}
     a_0s^n+a_1s^{n-1}......+a_{n-1}s^1+a_ns^0
 \end{align}
-
 \begin{table}[htbp]
 \setlength{\extrarowheight}{8pt}
 \centering
@@ -75,12 +74,12 @@ The table below shows the Routh array of the $n^{th}$- order characteristic poly
 \caption{Routh Array}
 \label{tab:routharray.IN.24.2023}
 \end{table}
-\noindent Characteristic Equation:
 \begin{align}
-   s^3+2s^2+5s+80 = 0  \label{eq:x(n).IN.24.2023}
+  P(s)&= s^3+2s^2+5s+80\label{eq:polynomial.24.IN.2023} \\
+  x(n)&=(n^3+2n^2+5n+80)u(n)\label{eq:x(n).IN.24.2023}
 \end{align}
 
-\noindent From \tabref{tab:routharray.IN.24.2023}:
+\noindent From \tabref{tab:routharray.IN.24.2023} and equation \eqref{eq:polynomial.24.IN.2023}:
 
 \begin{table}[htbp]
 \setlength{\extrarowheight}{10pt}
@@ -109,7 +108,7 @@ half of the s-plane will be 2.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width = \columnwidth]{figs/poles and root_plot.png}
-  \caption{}
+  \caption{Pole-Zero Plot of the Polynomial}
     \label{fig:graph1}
 \end{figure}
 
