@@ -1,0 +1,110 @@
+% \iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{caption}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+\parindent 0px
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{GATE: AG - 14.2023}
+\author{EE23BTECH11013 - Avyaaz$^{*}$% <-this % stops a space
+}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\arabic{figure}}
+\renewcommand{\thetable}{\arabic{table}}
+\large\textbf{\textsl{Question:}}
+$y = ae^{mx} + be^{-mx}$ is the solution of the differential equation
+\begin{enumerate}[label=\alph*)]
+    \item $\frac{dy}{dx} - my = 0$
+    \item $\frac{dy}{dx} + my = 0$
+    \item $\frac{d^2y}{dx^2} + m^2y = 0$
+    \item $\frac{d^2y}{dx^2} - m^2y = 0$
+\end{enumerate}
+\solution
+
+Let us assume $y = ae^{mx} + be^{-mx}$ is the solution of the differential equation : 
+\begin{align}
+    \frac{d^2y}{dx^2} - m^2y = 0
+\end{align}
+According to the property of the Laplace transform for derivatives :
+\begin{align}
+    \mathcal{L}\left\{ \frac{d^2y}{dx^2} \right\} = s^2 Y(s) - s \cdot y(0) - y'(0)
+\end{align}
+So, the Laplace transform of the differential equation becomes:
+\begin{align}
+   s^2 Y(s) - s\cdot y(0) - y'(0) - m^2Y(s) = 0
+   \end{align}
+   \begin{align}
+   \therefore Y(s) = \frac{s\cdot y(0) + y'(0)}{s^2 - m ^2}
+\end{align}
+
+We Know That,
+\begin{align}
+    Y(s) &= \frac{s\cdot y(0) + y'(0)}{s^2 - m ^2}\\
+    &= \frac{\frac{m\cdot y(0) + y'(0)}{2m}}{s - m} + \frac{\frac{-m\cdot y(0) + y'(0)}{-2m}}{s + m}\\
+    &=\frac{1}{2m}\left(\frac{m\cdot y(0) + y'(0)}{s - m} - \frac{m\cdot y(0) - y'(0)}{s + m}\right)
+\end{align}
+Taking the Inverse Laplace transform of $Y(s)$:
+\begin{align}
+ \implies& \frac{1}{2m} (m \cdot y(0) + y'(0)) e^{mx} - (m \cdot y(0) - y'(0)) e^{-mx} )\\
+% &\frac{1}{2m} \left( m \cdot y(0) e^{mx} + y'(0) e^{mx} - m \cdot y(0) e^{-mx} + y'(0) e^{-mx} \right)
+\implies &\frac{1}{2} \left( m \cdot y(0)(e^{mx} + e^{-mx}) + y'(0)(e^{mx} - e^{-mx}) \right)
+\end{align}
+ \begin{table}[htbp]
+     \centering
+     \setlength{\extrarowheight}{8pt}
+    \input{tables/table1}
+     \caption{Input Parameters}
+     \label{tab:table1.AG.14.2023}
+ \end{table} 
+ 
+From \tabref{tab:table1.AG.14.2023}:
+\begin{align}
+    y = ae^{mx} + be^{-mx}
+\end{align}
+
+% \bibliographystyle{IEEEtran}
+\end{document}
