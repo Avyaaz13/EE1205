@@ -92,25 +92,30 @@ Put $s = j\omega$ in \eqref{eq:given.EE.11.2022}:
 \caption{Conditions}
 \label{tab:inputs.EE.11.2022}
 \end{table}
-\begin{enumerate}[label=(\roman*)]
-\item \noindent From \tabref{tab:inputs.EE.11.2022} and equation \eqref{eq:magnitude.EE.11.2022}:
-
- \noindent At low frequency $(\omega = 0 )$:
+% \item \noindent From \tabref{tab:inputs.EE.11.2022} and equation \eqref{eq:magnitude.EE.11.2022}:
+\begin{enumerate}[label={\alph*)}]
+    \item Low Pass Filter:
+    
+  At low frequency $(\omega = 0 )$:
  \begin{align}
      |H(\omega = 0)| = \frac{B}{D}\label{eq:lowpass.EE.11.2022}
  \end{align}
-% It means, low frequency passed by given real system
-% H(s).
+$\therefore$ H(s) can operate as Low pass filter.
 
-\item \noindent From \tabref{tab:inputs.EE.11.2022} and equation \eqref{eq:magnitude.EE.11.2022}:
+\item High Pass Filter:
 
- \noindent At high frequency $(\omega = \infty )$:
+% From \tabref{tab:inputs.EE.11.2022} and equation \eqref{eq:magnitude.EE.11.2022}:
+
+At high frequency $(\omega = \infty )$:
  \begin{align}
      |H(\omega = \infty)| = 0 \label{eq:highpass.EE.11.2022}
  \end{align}
-% It means, high frequency $y$ blocked by given real system
-% H(s).
-\item Assuming B is a very less positive valued constant as compared to others:
+ % From \tabref{tab:inputs.EE.11.2022}:
+ 
+$\therefore$ $H(s)$ cannot operate as High pass filter.
+\item Band Pass Filter:
+
+ Assuming B is a very less positive valued constant as compared to others:
 \begin{align}
         |H(j\omega)| = \frac{(A\omega)}{\sqrt{(D - \omega^2)^2 + (\omega C)^2}}\\
    \implies      |H(\omega = 0)| = 0 \text{ and }  |H(\omega = \infty)| = 0 \label{eq:bandpass.EE.11.2022}
@@ -132,19 +137,22 @@ Put $s = j\omega$ in \eqref{eq:given.EE.11.2022}:
     \node[align=center] at (3,0.8) {Pass\\Band};
 
 \end{tikzpicture}
-Hence, H(s) passes frequency between low and high frequencies.
-\item 
-	At very high value of frequency$(\omega\mkern-4mu \rightarrow\mkern-6mu\infty)$:
+$\because$ $H(s)$ passes frequency between low and high frequencies.
+
+$\therefore$ $H(s)$ can operate as a band pass filter.
+\item Integrator:
+
+At very high value of frequency$(\omega\mkern-4mu \rightarrow\mkern-6mu\infty)$:
 \begin{align}
     H(s) \approx \frac{As}{s^2} \approx \frac{A}{s}\label{eq:integrator.EE.11.2022}
 \end{align}
+From \tabref{tab:inputs.EE.11.2022}:
 
-%The pole of the transfer function cannot exist at origin as $D > 0$.
-
-From equations \eqref{eq:lowpass.EE.11.2022},\eqref{eq:highpass.EE.11.2022},\eqref{eq:bandpass.EE.11.2022} and \eqref{eq:integrator.EE.11.2022}:
-
-The Transfer function $H(s)$ cannot be operated as a High pass filter.
+$\therefore$ $H(s)$ can operate as an Integrator.
 \end{enumerate}
+% From equations \eqref{eq:lowpass.EE.11.2022},\eqref{eq:highpass.EE.11.2022},\eqref{eq:bandpass.EE.11.2022} and \eqref{eq:integrator.EE.11.2022}:
+
+% The Transfer function $H(s)$ cannot be operated as a High pass filter.
 % \begin{figure}[htbp]
 %     \centering
 %     \includegraphics[width = \columnwidth]{}
