@@ -97,11 +97,44 @@ A symmetrical single phase semi converter is shown below,
 \centering
  \input{codes/sol}
 \end{figure}
+
+We know that,
+\begin{align}
+    i_s(t) = I_o +\sum_{n=1}^{\infty}C_n\sin({n\omega t} + \theta_n)\label{eq:gen_i_s}
+\end{align}
+ where,
+ \begin{align}
+     C_n = \sqrt{a_n^2 + b_n ^2}\label{eq:bino_coeff}\\
+     \theta_n = \tan^{-1}\left({\frac{a_n}{b_n}}\right)\label{eq: theta}
+ \end{align}
+\begin{align}
+  \implies  I_o &= \frac{1}{2\pi}\int_{\alpha}^{\pi} I_o d\omega t - \int_{\pi + \alpha}^{2\pi} I_o d\omega t = 0\\
+ \implies   a_n &= \frac{1}{\pi} \int_{\infty}^{\pi}I_o\cos n\omega t d\omega t - \int_{\pi + \alpha}^{2\pi} I_o\cos{n\omega td\omega t}\\
+    a_n&=\frac{-2I_o}{n\pi}\sin{n\alpha} \quad \mbox{ for n = 1,3,5...}\nonumber\\
+    &= 0  \hspace{2.8cm} \mbox{for n = 2,4.....}\nonumber\\
+ \implies   b_n &= \frac{1}{\pi}\int_{\alpha}^{\pi}I_o\sin n\omega t d\omega t - \int_{\pi + \alpha}^{2\pi} I_o\sin{n\omega td\omega t} \\
+    b_n &= \frac{2I_o}{n\pi}\left(1 + \cos{n\alpha}\right) \mbox{for n = 1,3,5...}\nonumber\\
+    &=0 \hspace{3cm} \mbox{for n = 2, 4....}\nonumber
+\end{align}
+From \eqref{eq:bino_coeff}:
+\begin{align}
+  \therefore  C_n &= \frac{2\sqrt{2}I_o}{n\pi}\left(\sqrt{1 + \cos{n\alpha}}\right)\\
+  \implies  C_n &= \frac{4I_o}{n\pi}\cos{\frac{n\alpha}{2}}\label{eq:final_bino}
+\end{align}
+From \eqref{eq: theta}:
+\begin{align}
+    \theta_n &= \tan^{-1}\left(\frac{-\sin{n\alpha}}{1 + \cos{n\alpha}}\right)\\
+    \implies \theta_n &= \frac{-n\alpha}{2}\label{eq:final_theta}
+\end{align}
 The Fourier series representation of supply current is given by:
 
+From \eqref{eq:gen_i_s},\eqref{eq:final_bino} and \eqref{eq:final_theta}:
 \begin{align}
 I_{s}(t) = \sum_{n=1,3,5...}^{\infty} \frac{4I_{dc}}{n\pi}\cos{\frac{n\alpha}{2}}\sin{\left(n\omega t - \frac{n\alpha}{2}\right)}
 \end{align}
+% \begin{align}
+% I_{s}(t) = \sum_{n=1,3,5...}^{\infty} \frac{4I_{dc}}{n\pi}\cos{\frac{n\alpha}{2}}\sin{\left(n\omega t - \frac{n\alpha}{2}\right)}
+% \end{align}
 
 
 % \begin{tikzpicture}[scale=1]
@@ -139,5 +172,5 @@ From \tabref{tab:inputs.EE.59.2022}:
     &= \frac{4 \times 15 }{\pi}\times \cos{\frac{45 \degree}{2}}\\
     &=17.64 A 
 \end{align}
- 
+
 \end{document}
