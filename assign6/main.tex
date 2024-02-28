@@ -17,7 +17,7 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{tkz-euclide} 
 \usepackage{tikz}
-%\usetikzlibrary{positioning, arrows.meta}
+% \usetikzlibrary{positioning, arrows.meta}
 \usepackage{listings}
 \usepackage{gvv} 
 \usepackage{caption}
@@ -72,11 +72,17 @@ increased by a factor of $3$, and the derivative gain is left unchanged. Given t
 error in tracking a ramp reference signal\hfill(GATE IN 2022) \\
 \solution
 
+\begin{table}[htbp]
+    \centering
+     \input{tables/table1}
+    \caption{Caption}
+    \label{tab:my_label}
+\end{table}
 \noindent The transfer function of PID controller,
 
 \begin{align}
     G_c(s) = K_p + \frac{K_I}{s} +sK_D\\
-    =\frac{s^2K_D + sk_P + K_I}{s}
+    =\frac{s^2K_D + Sk_P + K_I}{s}
 \end{align}
 Overall loop-transfer function,
 \begin{align}
