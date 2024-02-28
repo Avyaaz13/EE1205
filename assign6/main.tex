@@ -60,16 +60,6 @@
 
 \renewcommand{\thefigure}{\arabic{figure}}
 \renewcommand{\thetable}{\arabic{table}}
-\tikzset{
-    block/.style = {draw, fill=white, rectangle, minimum height=3em, minimum width=3em},
-    tmp/.style  = {coordinate}, 
-    minus/.style= {draw, fill=white, circle, node distance=1cm, append after command={\pgfextra \draw ($(\tikzlastnode.center) + (-0.15,0)$) -- ($(\tikzlastnode.center) + (0.15,0)$) node[above] {$-$}; \endpgfextra}},
-    plus/.style= {draw, fill=white, circle, node distance=1cm, append after command={\pgfextra \draw ($(\tikzlastnode.center) + (-0.15,0)$) -- ($(\tikzlastnode.center) + (0.15,0)$) node[above] {$+$}; \endpgfextra}},
-    input/.style = {coordinate},
-    output/.style= {coordinate},
-    pinstyle/.style = {pin edge={to-,thin,black}}
-}
-
 
 \large\textbf{\textsl{Question:}}
 A proportional-integral-derivative (PID) controller is employed to stably control a
@@ -81,11 +71,12 @@ Now, the proportional gain is increased by a factor of $2$, the integral gain is
 increased by a factor of $3$, and the derivative gain is left unchanged. Given that the closed-loop system continues to remain stable with the new gains, the steady-state
 error in tracking a ramp reference signal\hfill(GATE IN 2022) \\
 \solution
+
 \noindent The transfer function of PID controller,
 
 \begin{align}
     G_c(s) = K_p + \frac{K_I}{s} +sK_D\\
-    =\frac{s^2K_D + Sk_P + K_I}{s}
+    =\frac{s^2K_D + sk_P + K_I}{s}
 \end{align}
 Overall loop-transfer function,
 \begin{align}
