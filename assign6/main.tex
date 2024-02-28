@@ -82,12 +82,12 @@ error in tracking a ramp reference signal\hfill(GATE IN 2022) \\
 
 \begin{align}
     G_c(s) = K_p + \frac{K_I}{s} +sK_D\\
-    =\frac{s^2K_D + Sk_P + K_I}{s}
+    =\frac{s^2K_D + sK_P + K_I}{s}
 \end{align}
 Overall loop-transfer function,
 \begin{align}
     L(s) &= G_c(s)\cdot P(s)\\
-    L(s) &= \frac{s^2K_D + sk_P + K_I}{s(s+1)(s+2)}
+    L(s) &= \frac{s^2K_D + sK_p + K_I}{s(s+1)(s+2)}
 \end{align}
 Steady-state error due to ramp signal,
 \begin{align}

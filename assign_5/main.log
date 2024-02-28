@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  26 FEB 2024 07:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  28 FEB 2024 13:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1124,32 +1124,19 @@ File: pgflibrarycurvilinear.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircflow.tex))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/cir
-cuits/tikzlibrarycircuits.ee.IEC.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/cir
-cuits/tikzlibrarycircuits.ee.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/cir
-cuits/tikzlibrarycircuits.code.tex
-\tikz@lib@circ@count=\count338
-\tikzcircuitssizeunit=\dimen343
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/pgflib
-raryshapes.gates.ee.code.tex))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/pgflib
-raryshapes.gates.ee.IEC.code.tex)) (./gvv.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(./gvv.sty) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2022/03/01 v3.6b Customizing captions (AR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
-\caption@tempdima=\dimen344
-\captionmargin=\dimen345
-\caption@leftmargin=\dimen346
-\caption@rightmargin=\dimen347
-\caption@width=\dimen348
-\caption@indent=\dimen349
-\caption@parindent=\dimen350
-\caption@hangindent=\dimen351
+\caption@tempdima=\dimen343
+\captionmargin=\dimen344
+\caption@leftmargin=\dimen345
+\caption@rightmargin=\dimen346
+\caption@width=\dimen347
+\caption@indent=\dimen348
+\caption@parindent=\dimen349
+\caption@hangindent=\dimen350
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
@@ -1169,15 +1156,15 @@ Package caption Warning: Unknown document class (or package),
 (caption)                standard defaults will be used.
 See the caption package documentation for explanation.
 
-\c@caption@flags=\count339
-\c@continuedfloat=\count340
+\c@caption@flags=\count338
+\c@continuedfloat=\count339
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen352
+\col@sep=\dimen351
 \ar@mcellbox=\box77
-\extrarowheight=\dimen353
+\extrarowheight=\dimen352
 \NC@list=\toks44
 \extratabsurround=\skip65
 \backup@length=\skip66
@@ -1189,25 +1176,25 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTright=\skip68
 \LTpre=\skip69
 \LTpost=\skip70
-\LTchunksize=\count341
-\LTcapwidth=\dimen354
+\LTchunksize=\count340
+\LTcapwidth=\dimen353
 \LT@head=\box79
 \LT@firsthead=\box80
 \LT@foot=\box81
 \LT@lastfoot=\box82
 \LT@gbox=\box83
-\LT@cols=\count342
-\LT@rows=\count343
-\c@LT@tables=\count344
-\c@LT@chunks=\count345
+\LT@cols=\count341
+\LT@rows=\count342
+\c@LT@tables=\count343
+\c@LT@chunks=\count344
 \LT@p@ftn=\toks45
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip71
-\multirow@cntb=\count346
+\multirow@cntb=\count345
 \multirow@dima=\skip72
-\bigstrutjot=\dimen355
+\bigstrutjot=\dimen354
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/hhline.sty
 Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
@@ -1215,12 +1202,12 @@ Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
-\c@theorem=\count347
-\c@problem=\count348
-\c@proposition=\count349
-\c@lemma=\count350
-\c@example=\count351
-\c@rem=\count352
+\c@theorem=\count346
+\c@problem=\count347
+\c@proposition=\count348
+\c@lemma=\count349
+\c@example=\count350
+\c@rem=\count351
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 5
 2.
 
@@ -1311,16 +1298,16 @@ LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <24> not available
 -- Lines per column: 50 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count353
-\scratchdimen=\dimen356
+\scratchcounter=\count352
+\scratchdimen=\dimen355
 \scratchbox=\box84
-\nofMPsegments=\count354
-\nofMParguments=\count355
+\nofMPsegments=\count353
+\nofMParguments=\count354
 \everyMPshowfont=\toks46
-\MPscratchCnt=\count356
-\MPscratchDim=\dimen357
-\MPnumerator=\count357
-\makeMPintoPDFobject=\count358
+\MPscratchCnt=\count355
+\MPscratchDim=\dimen356
+\MPnumerator=\count356
+\makeMPintoPDFobject=\count357
 \everyMPtoPDFconversion=\toks47
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1331,7 +1318,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count359
+\c@lstlisting=\count358
 \symgns@font=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
 (Font)                  TS1/txr/m/n --> TS1/txr/b/n on input line 52.
@@ -1389,31 +1376,9 @@ File: ts1txr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txr/b/sl' in size <14> not available
 (Font)              Font shape `OT1/txr/bx/sl' tried instead on input line 67.
- (./codes/ques.tex
-Missing character: There is no [ in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 8 in font nullfont!
-Missing character: There is no ] in font nullfont!
-) (./tables/table1.tex) (./codes/sol.tex
-Missing character: There is no [ in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 8 in font nullfont!
-Missing character: There is no ] in font nullfont!
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./codes/v_in.tex)
+ (./codes/ques.tex)
+(./tables/table1.tex) (./codes/sol.tex) [1{/var/lib/texmf/fonts/map/pdftex/updm
+ap/pdftex.map}] (./codes/v_in.tex)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1434,13 +1399,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 48623 strings out of 476091
- 1139578 string characters out of 5794082
- 1888330 words of memory out of 5000000
- 68199 multiletter control sequences out of 15000+600000
+ 48029 strings out of 476091
+ 1119202 string characters out of 5794082
+ 1890330 words of memory out of 5000000
+ 67622 multiletter control sequences out of 15000+600000
  606974 words of font info for 235 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,16n,96p,1168b,1258s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,16n,96p,1168b,1012s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1451,7 +1416,7 @@ re/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on main.pdf (3 pages, 74218 bytes).
+Output written on main.pdf (3 pages, 74492 bytes).
 PDF statistics:
  110 PDF objects out of 1000 (max. 8388607)
  84 compressed objects within 1 object stream
