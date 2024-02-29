@@ -75,19 +75,27 @@ error in tracking a ramp reference signal\hfill(GATE IN 2022) \\
 \begin{table}[htbp]
     \centering
      \input{tables/table1}
-    \caption{Caption}
-    \label{tab:my_label}
+    \caption{}
+    \label{tab:my_label.41.IN.2022}
 \end{table}
-\noindent The transfer function of PID controller,
+
+\begin{figure}[!htbp]
+    \resizebox{0.501\textwidth}{!}{\input{figs/tikz}}
+    \caption{Block Diagram of System}
+    \label{fig:gate_IN_Q41_blockdiagram}
+\end{figure}
+
+
+The transfer function of PID controller,
 
 \begin{align}
-    G_c(s) = K_p + \frac{K_I}{s} +sK_D\\
+    G_c(s) = K_P + \frac{K_I}{s} +sK_D\\
     =\frac{s^2K_D + sK_P + K_I}{s}
 \end{align}
 Overall loop-transfer function,
 \begin{align}
     L(s) &= G_c(s)\cdot P(s)\\
-    L(s) &= \frac{s^2K_D + sK_p + K_I}{s(s+1)(s+2)}
+    L(s) &= \frac{s^2K_D + sK_P + K_I}{s(s+1)(s+2)}
 \end{align}
 Steady-state error due to ramp signal,
 \begin{align}
@@ -110,24 +118,13 @@ Now, the proportional gain is increased by a factor of 2, the integral gain is i
     K'_v = \frac{3K_I}{2}\\
     e'_{ss} = \frac{1}{K'_V} = \frac{2}{3K_I}
 \end{align}
-\begin{figure}[!ht]
-    \resizebox{0.55\textwidth}{!}{\input{figs/tikz}}
-    \caption{Block Diagram of System}
-    \label{fig:gate_IN_Q41_blockdiagram}
-\end{figure}
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width = \columnwidth]{figs/steady_state_error.png}
-  \caption{}
-    \label{fig:graph1.41.IN.2022}
-\end{figure}
 
 % \begin{figure}[htbp]
 %     \centering
-%     \includegraphics[width = \columnwidth]{}
+%     \includegraphics[width = \columnwidth]{figs/steady_state_error.png}
 %   \caption{}
-%     \label{fig:graph1}
+%     \label{fig:graph1.41.IN.2022}
 % \end{figure}
 
 % \bibliographystyle{IEEEtran}
